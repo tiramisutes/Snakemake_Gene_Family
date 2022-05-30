@@ -3,7 +3,7 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.2.1-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Snakemake-Report](https://img.shields.io/badge/snakemake-report-green.svg)](https://cdn.rawgit.com/snakemake-workflows/rna-seq-star-deseq2/master/.test/report.html)
 
-This workflow performs gene family identification.
+This workflow performs the identification of gene members of a particular gene family for a given species genome.
 ![](https://github.com/tiramisutes/Snakemake_Gene_Family/blob/main/workflows.svg)
 ## Authors
 
