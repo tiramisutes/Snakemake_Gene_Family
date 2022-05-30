@@ -1,10 +1,9 @@
 # Snakemake workflow: CRISPR sgRNA Designer
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.2.1-brightgreen.svg)](https://snakemake.bitbucket.io)
-[![Build Status](https://travis-ci.org/snakemake-workflows/rna-seq-star-deseq2.svg?branch=master)](https://travis-ci.org/snakemake-workflows/rna-seq-star-deseq2)
 [![Snakemake-Report](https://img.shields.io/badge/snakemake-report-green.svg)](https://cdn.rawgit.com/snakemake-workflows/rna-seq-star-deseq2/master/.test/report.html)
 
-This workflow performs sgRNA designer for CRISPR genome edit, which includes Cas9, Cas12a/cpf1, Cas12b/c2c1, CBE and ABE editors.
+This workflow performs gene family identification.
 
 ## Authors
 
@@ -20,7 +19,7 @@ In any case, if you use this workflow in a paper, don't forget to give credits t
 
 Git clone this repository using follows command 👇
 
-    git clone --recursive https://github.com/tiramisutes/CRISPR_sgRNA_Designer.git
+    git clone --recursive https://github.com/tiramisutes/Snakemake_Gene_Family.git
 
 目录结构如下：
 
@@ -40,38 +39,6 @@ Git clone this repository using follows command 👇
 ```
 
 #### Step 2: Prepare data and software
-
-The **10xGenomics** and **HiC** assembly have species require format name for input fastq file.
-
-##### 10xGenomics
-```
-MKFASTQ_ID
-|-- MAKE_FASTQS_CS
-`-- outs
-    |-- fastq_path
-        |-- HFLC5BBXX
-            |-- test_sample1
-            |   |-- test_sample1_S1_L001_R1_001.fastq.gz
-            |   |-- test_sample1_S1_L001_R2_001.fastq.gz
-            |   |-- test_sample1_S1_L002_R1_001.fastq.gz
-            |   |-- test_sample1_S1_L002_R2_001.fastq.gz
-            |   |-- test_sample1_S1_L003_R1_001.fastq.gz
-            |   `-- test_sample1_S1_L003_R2_001.fastq.gz
-            |-- test_sample2
-            |   |-- test_sample2_S2_L001_R1_001.fastq.gz
-            |   |-- test_sample2_S2_L001_R2_001.fastq.gz
-            |   |-- test_sample2_S2_L002_R1_001.fastq.gz
-            |   |-- test_sample2_S2_L002_R2_001.fastq.gz
-            |   |-- test_sample2_S2_L003_R1_001.fastq.gz
-            |   `-- test_sample2_S2_L003_R2_001.fastq.gz
-```
-
-##### HiC
-
-```
-RHC00720_L1_R1.fastq.gz
-RHC00720_L1_R2.fastq.gz
-```
 
 #### Step 3: Configure workflow
 
