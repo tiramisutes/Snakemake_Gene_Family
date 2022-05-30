@@ -1,0 +1,11 @@
+channels:
+  - bioconda
+  - biobuilds
+  - conda-forge
+  - defaults
+dependencies:
+  - bioconda::hmmer==3.3
+  - bioconda::seqtk==1.3
+  - biobuilds::clustalw==2.1
+  - anaconda::python==3.8.0
+  - conda-forge::openjdk==11.0.8

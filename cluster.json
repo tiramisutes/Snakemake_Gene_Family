@@ -1,0 +1,19 @@
+{
+    "__default__" :
+    {
+        "queue"     : "normal",
+        "name"      : "JOBNAME.{rule}.{wildcards}",
+        "output"    : "logs/cluster/{rule}.{wildcards}.out",
+        "error"     : "logs/cluster/{rule}.{wildcards}.err"
+    },
+
+
+    "InterProScan_genome" :
+    {
+        "queue"     : "smp"
+    },
+    "InterProScan_run" :
+    {
+        "queue"     : "smp"
+    }
+}

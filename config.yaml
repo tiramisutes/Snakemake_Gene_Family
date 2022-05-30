@@ -1,0 +1,25 @@
+# This file should contain everything to configure the workflow on a global scale.
+domain_metadata: domain_metadata.tsv
+
+
+# The genome protein fasta file
+# Give a path to genome_pep or place this file in <Resources> directory and set prefix in follow.
+genome_pep: "/public/home/zpxu/genome_gene_peptide.fasta"
+# Usually set it as name of genome protein fasta file
+prefix: "cotton"
+
+workdir: "/public/home/zpxu/Snakemake_Gene_Family"
+
+hmmsearch:
+  fir_evalue: "1E-20"
+  se_evalue: "1E-03"
+
+InterProScan_url: "ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.48-83.0/interproscan-5.48-83.0-64-bit.tar.gz"
+InterProScan_name: "interproscan-5.48-83.0"
+
+module:
+  # If InterProScan set to false, place the outside results to <InterProScan/{prefix}_pep.fa.tsv>
+  InterProScan: true
+  # Only use when for R genes
+  paircoil2: false
+

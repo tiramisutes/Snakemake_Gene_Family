@@ -1,0 +1,24 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+description: snakemake configuration file
+
+type: object
+
+properties:
+  domain_metadata:
+    type: string
+
+# possible entries of the config file and which type they should be
+properties:
+  genome_pep:
+    type: string
+  prefix:
+    type: string
+  workdir:
+    type: string
+
+
+# entries that have to be in the config file for successful validation
+required:
+  - prefix
+  - workdir
